@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat</title>
+    <style>
+        #div1{
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            transition: 1s;
+        }
+        .redBack{
+            border-radius: 300%;
+        }
+        #div1:hover{
+            transform: rotate(45deg);
+        }
+        #cat{
+            position: absolute;
+            top: 300px;
+            left: 600px;
+            height: 200px;
+            width: 300px;
+            border-radius: 100%;
+            background-color: chocolate;
+            transition: 3s;
+        }
+        #earL{
+            position: absolute;
+            top: 0px;
+            left: 55px;
+            height: 65px;
+            width: 65px;
+            background-color: chocolate;
+            transform: rotate(45deg);
+        }
+        #earR{
+            position: absolute;
+            top: 0px;
+            right: 55px;
+            height: 65px;
+            width: 65px;
+            background-color: chocolate;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <button onclick="document.getElementById('div1').style.transform='translateX(300px)'">move left</button>
+    <button onclick="document.getElementById('div1').style.transform='rotate(90deg)'">rotate</button>
+    <button onclick="document.getElementById('div1').style.transform='scale(30%)'">make SMALLER</button>
+    <button onclick="document.getElementById('div1').classList.toggle('redBack')">change</button>
+    <div id="cat">
+        <div id="earL"></div>
+        <div id="earR"></div>
+    </div>
+    <button onclick="document.getElementById('cat').style.transform='rotate(360deg)'">spin</button>
+    
+    
+</body>
+</html>
